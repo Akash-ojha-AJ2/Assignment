@@ -22,7 +22,7 @@ export default function BlogList() {
       setLoadingId(id);
 
       await axios.put(
-        `http://localhost:5000/api/enhance/${id}`
+        `${backend}/api/enhance/${id}`
       );
 
       alert("Article enhanced successfully ✅");
