@@ -99,6 +99,13 @@ Navigate to backend folder:
 ```bash
 cd backend
 
+## Install Dependencies (Backend)
+
+```bash
+npm install express multer mongoose cors @google/generative-ai axios cheerio serpapi dotenv cloudinary
+
+
+
 
 
 
