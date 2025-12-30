@@ -1,0 +1,53 @@
+.blog-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.blog-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.meta {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.tags span {
+  margin-right: 10px;
+  color: #0073e6;
+}
+
+.cover-img {
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+.intro h2 {
+  margin-top: 20px;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.section h2 {
+  font-size: 26px;
+}
+
+.sub-section h3 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+p {
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+ul {
+  margin-left: 20px;
+}
