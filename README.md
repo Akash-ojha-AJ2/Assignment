@@ -1,97 +1,104 @@
 # BeyondChats Article Automation Project (MERN Stack)
 
-A complete **MERN Stack–based solution** for the BeyondChats assignment.  
-This project automates article scraping, AI-based content enhancement, and displays both original and updated articles in a professional React frontend.
+This project is a complete implementation of the BeyondChats assignment.
+Although the task originally mentioned Laravel APIs, this project is built
+entirely using the MERN Stack while keeping the same logic, workflow, and outcomes.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This application automatically:
 
-- Scrapes blog articles from **BeyondChats**
-- Stores articles in a MongoDB database
-- Enhances content using **Google Search + AI**
+- Scrapes blog articles from BeyondChats
+- Stores original articles in MongoDB
+- Enhances articles using Google Search and AI
 - Publishes updated articles
-- Displays original and updated articles in a React-based UI
-
-> ⚠️ Note:  
-> This project is implemented using **MERN Stack instead of Laravel APIs**, while fully matching the task requirements.
+- Displays both original and updated articles in a React frontend
 
 ---
 
-## 🧩 Task Phases Implemented
+## Task Phases Implemented
 
-### ✅ Phase 1: Article Scraping & CRUD APIs (Moderate)
+---
 
-- Scrapes articles from the **last page** of BeyondChats blogs  
-  🔗 https://beyondchats.com/blogs/
-- Fetches **5 oldest articles**
-- Stores articles in **MongoDB**
-- Implements complete **CRUD APIs**
+## Phase 1: Article Scraping & CRUD APIs (Moderate Difficulty)
+
+- Scrapes articles from the last page of BeyondChats blogs  
+  https://beyondchats.com/blogs/
+- Fetches the 5 oldest articles
+- Stores articles in MongoDB
+- Implements complete CRUD APIs:
   - Create Article
   - Read Articles
   - Update Article
   - Delete Article
 
-These are stored as **original articles**.
+These are stored as original articles in the database.
 
 ---
 
-### ✅ Phase 2: AI-Based Article Enhancement (Very Difficult)
+## Phase 2: AI-Based Article Enhancement (Very Difficult)
 
-A Node.js script performs the following steps:
+A Node.js script performs the following:
 
-1. Fetches articles from the backend APIs
-2. Searches the article title on **Google**
-3. Fetches **top 2 blog/article links** using **SerpAPI**
-4. Scrapes the main content of those articles using **Cheerio**
-5. Uses **Google Generative AI** to:
-   - Mix original article content
-   - Improve formatting, structure, and quality
-   - Generate a new enhanced article
-6. Publishes the updated article via CRUD APIs
-7. Adds **reference article links** at the bottom of the updated article
-
-Both **original** and **updated versions** are preserved.
+- Fetches articles from Phase 1 APIs
+- Searches the article title on Google
+- Fetches the top 2 ranking blog/article links
+- Scrapes main content from those websites using Cheerio
+- Uses Google Generative AI to:
+  - Mix original article content
+  - Improve formatting and structure
+  - Generate an enhanced article
+- Publishes the updated article using CRUD APIs
+- Adds reference article links at the bottom of the updated article
 
 ---
 
-### ✅ Phase 3: Frontend UI (Very Easy)
+## Phase 3: Frontend UI (Very Easy)
 
-- Built using **React.js**
-- Displays:
-  - Original articles
-  - Updated (AI-enhanced) articles
-- Responsive and clean UI
-- Article cards open full article view on click
+- Built using ReactJS
+- Fetches articles from backend APIs
+- Displays original as well as updated articles
+- Responsive and professional blog-style UI
 
 ---
 
-## 🛠️ Tech Stack Used
+## Tech Stack
 
 ### Backend
 - Node.js
 - Express.js
 - MongoDB
 - Mongoose
-- CORS (security)
-- Axios
-- Cheerio (HTML scraping)
-- SerpAPI (Google Search results)
-- @google/generative-ai (LLM integration)
-- Cloudinary (image storage)
-- dotenv
 
 ### Frontend
 - React.js
 - React Router DOM
 - Axios
-- Vite
+
+### Libraries & Tools
+- cors
+- axios
+- cheerio
+- serpapi
+- @google/generative-ai
+- dotenv
+- cloudinary
 
 ---
 
-## 📁 Project Structure
+## How to Run the Project Locally
+
+---
+
+### Backend Setup
+
+Navigate to backend folder:
+
+```bash
+cd backend
+
 
 
 
