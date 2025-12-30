@@ -23,11 +23,16 @@ exports.searchGoogle = async (title) => {
           ? item.link()
           : null;
 
+      if (!link) continue;
+
+      if (link.includes("beyondchats.com")) {
+        continue;
+      }
+
       if (
-        link &&
-        (link.includes("blog") ||
-          link.includes("article") ||
-          link.includes("post"))
+        link.includes("blog") ||
+        link.includes("article") ||
+        link.includes("post")
       ) {
         references.push({
           title: item.title || "No title",
@@ -37,6 +42,7 @@ exports.searchGoogle = async (title) => {
         });
       }
 
+      // 🎯 ONLY TOP 2 VALID REFERENCES
       if (references.length === 2) break;
     }
 
@@ -46,3 +52,4 @@ exports.searchGoogle = async (title) => {
     return [];
   }
 };
+
