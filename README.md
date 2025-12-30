@@ -105,6 +105,66 @@ cd backend
 npm install express multer mongoose cors @google/generative-ai axios cheerio serpapi dotenv cloudinary
 
 
+Seed Initial Articles (Important)
+
+Open app.js
+
+Uncomment the function at line number 22
+
+This function inserts 5 initial articles into MongoDB
+
+Start backend server:
+
+npm start
+
+
+After articles are saved:
+
+Comment the seed function again
+
+Restart the server if required
+
+Frontend Setup
+
+Navigate to frontend folder:
+
+cd frontend
+
+
+Install dependencies:
+
+npm install react-router-dom axios
+
+
+Run frontend server:
+
+npm run dev
+
+Final Output
+
+Automated article scraping
+
+AI-enhanced content generation
+
+Clean and responsive React UI
+
+Fully automated end-to-end workflow
+
+Conclusion
+
+This project successfully completes all three phases of the assignment using the MERN Stack and demonstrates:
+
+Web scraping
+
+API development
+
+AI-based content enhancement
+
+Full-stack automation
+
+Developed By
+
+Akash Ojha
 
 
 
