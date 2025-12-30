@@ -12,7 +12,15 @@ const enhancedArticleRoutes = require(
 
 
 const app = express();
-app.use(cors());
+const allowedOrigins = ["https://assignment-woad-theta-80.vercel.app"];
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use("/images", express.static("public/images"));
 
